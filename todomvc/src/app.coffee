@@ -23,8 +23,8 @@ app.use (req, res, next) ->
       res.redirect('/')
     else if req.query.code
       taskAPI.getToken req.query.code, (err, ret) ->
-        if req.query.access_token
-          taskAPI.teambition.token = req.query.access_token
+        if ret.access_token
+          taskAPI.teambition.token = ret.access_token
           res.redirect('/')
         else res.json(ret)
   else if not taskAPI.teambition.token
