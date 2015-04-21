@@ -1,0 +1,14 @@
+{
+  "name": "teambition-openapi-todomvc",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "express": "4.1.1",
+    "jade": "*",
+    "socket.io": "*",
+    "teambition": "^1.0.1"
+  }
+}

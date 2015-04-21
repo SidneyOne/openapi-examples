@@ -1,0 +1,17 @@
+extends layout
+
+block content
+     p <a href="https://github.com/teambition/teambition-openapi-examples"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png" alt="Fork me on GitHub"></a>
+     section#todo
+      header#header
+       h1 todos
+       form( id='todo-form')
+        input(id='new-todo', placeholder="What needs to be done?", name='title')
+      section#main
+       input(id="toggle-all", type="checkbox")
+       ul#todo-list
+      footer#footer
+     div#info
+      p Double-click to edit a todo
+      p Written by <a href="https://github/teambition" target="blank_">Teambition</a> based on TodoMVC
+      p Node.js | Express.js | Teambition API
